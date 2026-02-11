@@ -45,6 +45,12 @@ function KadenzBestimmungInner({ verse, title = 'Kadenz bestimmen', onComplete }
     setCurrentIndex(prev => Math.min(prev + 1, verse.length - 1));
   };
 
+  const prev = () => {
+    setSelected(null);
+    setChecked(false);
+    setCurrentIndex(prev => Math.max(prev - 1, 0));
+  };
+
   const reset = () => {
     setSelected(null);
     setChecked(false);
@@ -159,7 +165,10 @@ function KadenzBestimmungInner({ verse, title = 'Kadenz bestimmen', onComplete }
         </div>
       )}
 
-      <div style={{ display: 'flex', gap: '0.5rem' }}>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+        {currentIndex > 0 && (
+          <button onClick={prev} className="button button--secondary">Vorheriger Vers</button>
+        )}
         {!checked ? (
           <button onClick={check} className="button button--primary" disabled={!selected}>Prüfen</button>
         ) : (

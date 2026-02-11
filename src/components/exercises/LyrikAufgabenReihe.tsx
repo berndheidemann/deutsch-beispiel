@@ -386,16 +386,24 @@ function ReimschemaQuizSeries({
         title="Reimschema bestimmen"
         onComplete={handleStropheComplete}
       />
-      {completedStrophen.has(currentIndex) && currentIndex < strophen.length - 1 && (
-        <div style={{ marginTop: '0.75rem' }}>
+      <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.5rem' }}>
+        {currentIndex > 0 && (
+          <button
+            onClick={() => setCurrentIndex(prev => prev - 1)}
+            className="button button--secondary"
+          >
+            Vorherige Strophe
+          </button>
+        )}
+        {completedStrophen.has(currentIndex) && currentIndex < strophen.length - 1 && (
           <button
             onClick={() => setCurrentIndex(prev => prev + 1)}
             className="button button--primary"
           >
             Nächste Strophe
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -56,6 +56,12 @@ function MetrumKlopferInner({ verse, title = 'Metrum-Klopfer', onComplete }: Met
     setCurrentVersIndex(prev => Math.min(prev + 1, verse.length - 1));
   };
 
+  const prev = () => {
+    setSelections(new Set());
+    setChecked(false);
+    setCurrentVersIndex(prev => Math.max(prev - 1, 0));
+  };
+
   const reset = () => {
     setSelections(new Set());
     setChecked(false);
@@ -138,7 +144,10 @@ function MetrumKlopferInner({ verse, title = 'Metrum-Klopfer', onComplete }: Met
         </div>
       )}
 
-      <div style={{ display: 'flex', gap: '0.5rem' }}>
+      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+        {currentVersIndex > 0 && (
+          <button onClick={prev} className="button button--secondary">Vorheriger Vers</button>
+        )}
         {!checked ? (
           <button onClick={check} className="button button--primary" disabled={selections.size === 0}>Prüfen</button>
         ) : (
