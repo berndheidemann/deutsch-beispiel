@@ -85,10 +85,10 @@ const AUFGABEN: Aufgabe[] = [
     kategorie: 'formal',
   },
   {
-    id: 'strophenform',
+    id: 'gedichtform',
     nummer: 6,
-    titel: 'Strophenformen zuordnen',
-    beschreibung: 'Ordne Strophenformen (Sonett, Ode, Volkslied …) ihren Merkmalen zu.',
+    titel: 'Gedichtformen zuordnen',
+    beschreibung: 'Ordne Gedichtformen (Sonett, Ode, Ballade …) ihren Merkmalen zu.',
     afb: 1,
     kategorie: 'formal',
   },
@@ -254,7 +254,7 @@ function renderExercise(aufgabe: Aufgabe, onComplete: () => void): React.ReactNo
         />
       );
 
-    case 'strophenform':
+    case 'gedichtform':
       return (
         <StilfigurDragDrop
           exercises={strophenformExercises.map(s => ({
@@ -263,7 +263,7 @@ function renderExercise(aufgabe: Aufgabe, onComplete: () => void): React.ReactNo
             feedbackCorrect: `Richtig! ${s.stilmittel} erkannt.`,
             feedbackIncorrect: 'Diese Zuordnung stimmt nicht. Versuche es nochmal.',
           }))}
-          title="Strophenformen zuordnen"
+          title="Gedichtformen zuordnen"
           onComplete={onComplete}
         />
       );
@@ -502,10 +502,14 @@ function LyrikAufgabenReiheInner() {
             Alle Aufgaben abgeschlossen! Du hast die Lyrik-Aufgabenreihe gemeistert.
           </div>
         )}
-        {completedCount > 0 && completedCount < totalCount && (
-          <div style={{ marginTop: '0.5rem', textAlign: 'right' }}>
+        {completedCount < totalCount && (
+          <div style={{ marginTop: '0.5rem', display: 'flex', justifyContent: 'space-between' }}>
             <button
-              onClick={handleReset}
+              onClick={() => {
+                const allIds = AUFGABEN.map(a => a.id);
+                setCompletedIds(allIds);
+                saveCompleted(allIds);
+              }}
               style={{
                 background: 'none',
                 border: 'none',
@@ -515,8 +519,23 @@ function LyrikAufgabenReiheInner() {
                 textDecoration: 'underline',
               }}
             >
-              Fortschritt zurücksetzen
+              Alle freischalten (Test)
             </button>
+            {completedCount > 0 && (
+              <button
+                onClick={handleReset}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--ifm-color-emphasis-500)',
+                  fontSize: '0.75rem',
+                  cursor: 'pointer',
+                  textDecoration: 'underline',
+                }}
+              >
+                Fortschritt zurücksetzen
+              </button>
+            )}
           </div>
         )}
       </div>

@@ -195,14 +195,14 @@ export const reimschemaStrophen = [
   },
   {
     strophe: [
-      { id: 'rs2-v1', text: 'In meinen Adern welches Feuer!', reimBuchstabe: 'a' },
-      { id: 'rs2-v2', text: 'In meinem Herzen welche Glut!', reimBuchstabe: 'b' },
-      { id: 'rs2-v3', text: 'Dich sah ich, und die milde Freude', reimBuchstabe: 'c' },
-      { id: 'rs2-v4', text: 'Floß von dem süßen Blick auf mich;', reimBuchstabe: 'd' },
+      { id: 'rs2-v1', text: 'Und meine Seele spannte', reimBuchstabe: 'a' },
+      { id: 'rs2-v2', text: 'Weit ihre Flügel aus,', reimBuchstabe: 'b' },
+      { id: 'rs2-v3', text: 'Flog durch die stillen Lande,', reimBuchstabe: 'a' },
+      { id: 'rs2-v4', text: 'Als flöge sie nach Haus.', reimBuchstabe: 'b' },
     ],
-    reimschemaName: 'Reimloser Abschnitt (Waisen)',
+    reimschemaName: 'Kreuzreim',
     erklaerung:
-      'Hier liegt kein durchgängiges Reimschema vor — die Verse reimen sich nicht aufeinander (abcd). Solche reimlosen Passagen können bewusst eingesetzt werden, um Unruhe oder Aufbruch auszudrücken. Achtung: Bei dieser Aufgabe war dies ein Ausschnitt quer über Strophengrenzen.',
+      'Kreuzreim (abab): „spannte" reimt auf „Lande" (a, unreiner Reim) und „aus" auf „Haus" (b, reiner Reim). Auch in der dritten Strophe der „Mondnacht" wird das Reimschema konsequent durchgehalten — die formale Einheitlichkeit stützt die ruhige, fließende Stimmung.',
   },
   {
     strophe: [
@@ -237,7 +237,7 @@ export const enjambementDaten = {
 };
 
 // ============================================================
-// 6. Strophenform erkennen (DragDrop-Zuordnung)
+// 6. Gedichtform erkennen (DragDrop-Zuordnung)
 // ============================================================
 
 export const strophenformExercises = [
