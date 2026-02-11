@@ -4,27 +4,117 @@ title: Zeitgestaltung
 ---
 
 import { TextVergleich } from '@site/src/components/interactive/TextVergleich';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
 import { kafkaFontaneVergleich } from '@site/src/data/exercises/kapitel02';
 
 # Zeitgestaltung
 
-Die Zeitgestaltung beschreibt das Verhältnis von **erzählter Zeit** (Dauer der Handlung) und **Erzählzeit** (Dauer des Erzählens).
+Die Zeitgestaltung ist ein zentrales Analyseinstrument der Epik. Sie beschreibt, wie ein Erzähler mit der Zeit umgeht — wie er sie staucht, dehnt, überspringt oder umkehrt. Die Analyse der Zeitgestaltung zeigt, **was einem Text wichtig ist**: Was ausführlich erzählt wird, ist bedeutsam; was gerafft wird, dient als Überbrückung.
+
+## Grundbegriffe: Erzählzeit und erzählte Zeit
 
 | Begriff | Definition | Beispiel |
 |---------|-----------|---------|
-| **Zeitraffung** | Erzählte Zeit > Erzählzeit | „Drei Jahre vergingen." |
-| **Zeitdehnung** | Erzählte Zeit < Erzählzeit | Detaillierte Beschreibung eines Augenblicks |
-| **Zeitdeckung** | Erzählte Zeit ≈ Erzählzeit | Dialog, innerer Monolog |
-| **Rückblende (Analepse)** | Sprung in die Vergangenheit | Erinnerungsszenen |
-| **Vorausdeutung (Prolepse)** | Hinweis auf Zukünftiges | „Später sollte sich zeigen, dass…" |
+| **Erzählzeit** | Die Zeit, die das *Lesen/Erzählen* des Textes dauert (gemessen in Seiten, Zeilen, Wörtern) | 5 Seiten Romananfang |
+| **Erzählte Zeit** | Die Zeit, die in der *Handlung* vergeht (Minuten, Stunden, Jahre) | Ein Morgen, ein ganzes Leben |
+
+Das Verhältnis beider Zeiten bestimmt das **Erzähltempo** — und damit die Wirkung des Textes auf den Leser.
+
+---
+
+## Formen des Erzähltempos
+
+| Form | Verhältnis | Wirkung | Beispiel |
+|------|-----------|---------|---------|
+| **Zeitraffung** | Erzählte Zeit > Erzählzeit | Beschleunigung; überbrückt unwichtige Zeiträume | „Drei Jahre vergingen, in denen nichts geschah." |
+| **Zeitdehnung** | Erzählte Zeit < Erzählzeit | Verlangsamung; hebt wichtige Momente hervor | Ein Augenblick wird auf mehreren Seiten beschrieben |
+| **Zeitdeckung** | Erzählte Zeit ≈ Erzählzeit | Unmittelbarkeit; Leser erlebt in „Echtzeit" | Dialog, innerer Monolog, szenische Darstellung |
+| **Zeitsprung (Ellipse)** | Erzählte Zeit wird übersprungen | Leerstelle; Leser muss die Lücke füllen | „Als er im Sommer zurückkehrte…" (Monate fehlen) |
+| **Pause** | Keine Handlungszeit vergeht | Unterbrechung für Beschreibung, Reflexion, Kommentar | Erzählerkommentar, ausführliche Ortsbeschreibung |
+
+:::info Warum ist das wichtig?
+Die Zeitgestaltung ist kein bloßes Formmerkmal — sie ist ein **Interpretationshinweis**. Wenn Kafka die Verwandlung Gregors in einem einzigen Satz erzählt, aber seine langsame Isolation über Wochen dehnt, zeigt das: Nicht die Verwandlung selbst ist das Thema, sondern ihre *soziale Wirkung*. Die Analyse des Erzähltempos führt direkt zur Deutung.
+:::
+
+---
+
+## Ordnung: Rückblende und Vorausdeutung
+
+Erzähler müssen die Handlung nicht chronologisch erzählen. Sie können die zeitliche Ordnung durchbrechen:
+
+| Form | Fachbegriff | Funktion | Beispiel |
+|------|------------|----------|---------|
+| **Rückblende** | Analepse | Vergangenes wird nachträglich erzählt; schafft Hintergrund, erklärt Motivation | „Schon als Kind hatte er gewusst, dass…" |
+| **Vorausdeutung** | Prolepse | Zukünftiges wird angedeutet; erzeugt Spannung oder Schicksalshaftigkeit | „Später sollte sich zeigen, dass dies ein Fehler war." |
+| **Zeitwechsel** | Anachronie | Allgemeiner Begriff für jede Abweichung von der chronologischen Reihenfolge | Verschachtelte Erzählstruktur in Rahmenerzählungen |
+
+### Rückblende (Analepse) in der Praxis
+
+Die Rückblende ist ein häufiges Mittel in Rahmenerzählungen:
+- **Storm: *Der Schimmelreiter*** — Die gesamte Haupthandlung ist eine Rückblende, eingebettet in eine Rahmenerzählung. Die Vergangenheit wird aus der Erinnerung eines Erzählers rekonstruiert, was die Frage nach der Zuverlässigkeit aufwirft.
+- **Fontane: *Effi Briest*** — Rückblenden auf Effis Kindheit kontrastieren ihre spätere Einsamkeit in Kessin und verdeutlichen den Verlust an Lebensfreude.
+
+### Vorausdeutung (Prolepse) in der Praxis
+
+- **Fontane: *Effi Briest*** — Die berühmte Frage der Mutter: „Ob Effi nicht doch zu jung sei" deutet das tragische Ende voraus, ohne es auszusprechen. Diese Prolepsen durchziehen den ganzen Roman und erzeugen eine Atmosphäre der Unvermeidlichkeit.
+- **Kafka: *Die Verwandlung*** — Der erste Satz ist selbst eine Art Prolepse: „Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt." Die Verwandlung wird nicht erzählt — sie ist bereits geschehen. Der Rest der Erzählung ist eine einzige gedehnte Konsequenz.
+
+---
+
+## Zeitgestaltung in den Textkorpus-Werken
+
+| Werk | Zeitgestaltung | Wirkung |
+|------|---------------|---------|
+| **Kafka: *Die Verwandlung*** | Der erste Satz rafft die Verwandlung extrem (Ellipse); danach dominiert **Zeitdehnung** — der erste Morgen wird auf vielen Seiten erzählt | Die Verwandlung ist kein Prozess, sondern ein Faktum. Die gedehnte Darstellung des Danach zeigt: Die soziale Isolation ist das eigentliche Thema |
+| **Fontane: *Effi Briest*** | Wechsel von **Zeitraffung** (Jahre in wenigen Absätzen) und **szenischer Darstellung** (Dialoge in Zeitdeckung); Prolepsen durchziehen den Text | Der Wechsel zwischen Raffung und Szene erzeugt den typisch realistischen Erzählrhythmus: Gesellschaftliches Panorama + psychologische Momentaufnahmen |
+| **Hoffmann: *Der Sandmann*** | Briefe (Zeitdeckung), dann Erzählerbericht mit Rückblenden und Zeitsprüngen; die Zeiterfahrung ist fragmentiert | Die fragmentierte Zeitstruktur spiegelt Nathanaels zersplitterte Wahrnehmung — der Leser verliert wie der Protagonist die zeitliche Orientierung |
+| **Storm: *Der Schimmelreiter*** | Dreifache Rahmenerzählung — jede Ebene hat ihre eigene Zeitschicht (Gegenwart → Vergangenheit → ferne Vergangenheit) | Die verschachtelte Zeitstruktur erzeugt Distanz und Unzuverlässigkeit: Je weiter die Handlung in der Vergangenheit liegt, desto unsicherer wird die Überlieferung |
+
+---
+
+## Analyseschema
+
+Wenn du die Zeitgestaltung eines Textes analysierst, orientiere dich an diesen Schritten:
+
+1. **Erzählte Zeit bestimmen:** Wie viel Zeit vergeht in der Handlung? (Stunden, Tage, Jahre?)
+2. **Erzähltempo analysieren:** Wo wird gerafft, wo gedehnt? Gibt es Zeitsprünge oder Pausen?
+3. **Auffälligkeiten benennen:** Welche Stellen werden besonders ausführlich (= wichtig) oder besonders kurz (= unwichtig/bewusst ausgespart) erzählt?
+4. **Rückblenden und Vorausdeutungen identifizieren:** Gibt es Analepsen oder Prolepsen? Welche Funktion haben sie?
+5. **Deutung:** Was sagt die Zeitgestaltung über das Thema, die Figuren oder die Erzählhaltung aus?
+
+:::tip Klausurtipp
+Nenne bei der Zeitgestaltung immer **den Fachbegriff und die Wirkung**. Nicht: „Der Erzähler erzählt das schnell." Sondern: „Die Zeitraffung (‚Drei Jahre vergingen') überbrückt eine für die Handlung irrelevante Phase und lenkt den Blick auf den entscheidenden Wendepunkt." Fachsprache + Funktionsanalyse = gute Note.
+:::
+
+---
 
 ## Übung: Textvergleich
 
-Vergleiche die Erzähltechnik der beiden Romananfänge:
+Vergleiche die Erzähltechnik der beiden Romananfänge — achte besonders auf das Erzähltempo und die Wirkung der Zeitgestaltung:
 
 <TextVergleich
   textA={kafkaFontaneVergleich.textA}
   textB={kafkaFontaneVergleich.textB}
   vergleichsaspekte={kafkaFontaneVergleich.vergleichsaspekte}
   title="Erzähltechnik vergleichen: Kafka vs. Fontane"
+/>
+
+## Quiz: Zeitgestaltung
+
+<MultipleChoice
+  question="Was zeigt es, wenn Kafka die Verwandlung Gregors in einem Satz erzählt, die Folgen aber auf vielen Seiten?"
+  options={[
+    { text: 'Kafka konnte die Verwandlung nicht beschreiben', correct: false, explanation: 'Falsch. Die Kürze ist ein bewusstes Stilmittel: Die Verwandlung wird als unerklärliches Faktum gesetzt, nicht als Prozess erzählt.' },
+    { text: 'Die Zeitraffung der Verwandlung und die Zeitdehnung der Folgen zeigen: Nicht die Verwandlung selbst, sondern die soziale Isolation ist das eigentliche Thema', correct: true, explanation: 'Richtig! Die Zeitgestaltung ist ein Interpretationsschlüssel: Was ausführlich erzählt wird, ist dem Text wichtig. Kafka dehnt die soziale Dimension, nicht das fantastische Ereignis.' },
+    { text: 'Es hat keine besondere Bedeutung', correct: false, explanation: 'Die Zeitgestaltung ist ein zentrales Analyseinstrument. Die asymmetrische Verteilung von Raffung und Dehnung ist bei Kafka höchst bedeutsam.' },
+  ]}
+/>
+
+<MultipleChoice
+  question="Was ist eine Prolepse?"
+  options={[
+    { text: 'Ein Rückblick auf vergangene Ereignisse', correct: false, explanation: 'Das ist eine Analepse (Rückblende). Die Prolepse geht in die andere Zeitrichtung.' },
+    { text: 'Eine Vorausdeutung auf zukünftige Ereignisse', correct: true, explanation: 'Richtig! Die Prolepse (Vorausdeutung) deutet Kommendes an, z. B.: „Später sollte sich zeigen, dass dies ein Fehler war." Sie erzeugt Spannung oder eine Atmosphäre der Unausweichlichkeit.' },
+    { text: 'Eine Pause in der Erzählung', correct: false, explanation: 'Eine Pause liegt vor, wenn der Erzähler die Handlung unterbricht für Beschreibung oder Kommentar — das ist keine Prolepse.' },
+  ]}
 />

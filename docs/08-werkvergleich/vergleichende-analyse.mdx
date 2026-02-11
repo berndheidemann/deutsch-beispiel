@@ -4,11 +4,91 @@ title: Vergleichende Analyse
 ---
 
 import { TextVergleich } from '@site/src/components/interactive/TextVergleich';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
 import { kafkaHoffmannVergleich } from '@site/src/data/exercises/kapitel08';
 
 # Vergleichende Analyse
 
-Die vergleichende Analyse ist die Methodik des Werkvergleichs: Zwei Texte werden systematisch unter bestimmten Aspekten verglichen.
+Die vergleichende Analyse (Werkvergleich) ist eine zentrale Abitur-Aufgabenform: Zwei oder mehr Texte werden systematisch unter bestimmten Aspekten verglichen. Ziel ist nicht die bloße Gegenüberstellung, sondern das Herausarbeiten von **Gemeinsamkeiten, Unterschieden und deren Bedeutung** im literarischen oder epochalen Kontext.
+
+## Methodik des Werkvergleichs
+
+### Was wird verglichen?
+
+Ein Werkvergleich kann verschiedene Ebenen betreffen:
+
+| Vergleichsebene | Leitfragen | Beispiel |
+|-----------------|-----------|---------|
+| **Thema/Motiv** | Wie wird dasselbe Motiv in den Texten gestaltet? | Identitätsverlust bei Kafka und Hoffmann |
+| **Figurengestaltung** | Wie werden Protagonisten charakterisiert? Welche Rolle haben sie? | Gregor Samsa vs. Nathanael — passive Opfer? |
+| **Erzähltechnik** | Welche Perspektive, Zeitgestaltung, Darbietungsform? | Auktorialer Erzähler (Fontane) vs. personaler Erzähler (Kafka) |
+| **Sprachstil** | Welche sprachlichen Mittel, welcher Ton? | Nüchterne Protokollsprache (Kafka) vs. romantisch-fantastische Sprache (Hoffmann) |
+| **Epochenzugehörigkeit** | Wie spiegeln sich Epochenmerkmale in den Texten? | Sturm-und-Drang-Dynamik (Goethe) vs. romantische Entrücktheit (Eichendorff) |
+| **Gesellschaftsbild** | Welches Bild der Gesellschaft wird entworfen? | Ständekritik (Schiller) vs. Konventionsdruck (Fontane) |
+
+### Die drei Vergleichsmethoden
+
+| Methode | Aufbau | Vorteil | Nachteil |
+|---------|--------|---------|----------|
+| **Blockvergleich** | Text A vollständig analysieren, dann Text B, dann Vergleich | Übersichtlich, gründliche Einzelanalyse | Vergleich kann oberflächlich wirken; Redundanz |
+| **Aspektvergleich** | Aspekt für Aspekt beide Texte parallel behandeln | Direkte Gegenüberstellung, analytisch scharf | Erfordert gute Planung; kann unübersichtlich werden |
+| **Integrierter Vergleich** | Ein Text als Ausgangspunkt, der andere wird aspektweise einbezogen | Flüssiger Textfluss, tiefe Verknüpfung | Gefahr der Ungleichgewichtung |
+
+:::tip Klausurtipp
+Der **Aspektvergleich** wird im Abitur am häufigsten erwartet und empfohlen. Er zwingt dich, von Anfang an *vergleichend* zu denken — nicht erst am Ende einen Vergleich „dranzuhängen". Orientiere dich an der Aufgabenstellung: Welche Aspekte werden vorgegeben? Diese bilden deine Gliederungspunkte.
+:::
+
+---
+
+## Aufbau einer vergleichenden Analyse
+
+### 1. Einleitung
+- Beide Texte vorstellen: Autor, Titel, Erscheinungsjahr, Gattung, Epoche
+- **Vergleichsthese** formulieren: Was verbindet die Texte, worin unterscheiden sie sich grundlegend?
+- Vergleichsaspekte benennen (aus der Aufgabenstellung oder selbst gewählt)
+
+### 2. Hauptteil (Aspektvergleich)
+Für jeden Vergleichsaspekt:
+- **Befund in Text A** mit Textbeleg
+- **Befund in Text B** mit Textbeleg
+- **Vergleichende Bewertung:** Gemeinsamkeit oder Unterschied? Warum? Was bedeutet das?
+
+### 3. Schluss
+- Vergleichsergebnis zusammenfassen
+- **Epochale Einordnung:** Was sagt der Vergleich über die Epochen, Strömungen oder Weltbilder der Texte aus?
+- Ggf. weiterführende Deutung oder Aktualisierung
+
+:::warning Häufiger Fehler
+**Zwei Einzelanalysen hintereinander sind kein Werkvergleich.** Der Vergleich muss *durchgängig* sein — nicht erst im Schlussteil. Nutze Vergleichssignalwörter: „Während… so…", „Im Gegensatz zu…", „Ebenso wie… zeigt auch…", „Anders als…". Jeder Absatz sollte beide Texte enthalten.
+:::
+
+---
+
+## Vergleichssignalwörter
+
+| Funktion | Formulierungen |
+|----------|---------------|
+| **Gemeinsamkeit** | „Ebenso wie…", „Auch in…", „Beiden Texten gemeinsam ist…", „Vergleichbar mit…" |
+| **Unterschied** | „Während… so…", „Im Gegensatz zu…", „Anders als…", „Demgegenüber…" |
+| **Steigerung** | „Noch deutlicher zeigt sich…", „In radikalisierter Form…", „Weiter als… geht…" |
+| **Einordnung** | „Dies lässt sich epochal einordnen als…", „Typisch für… ist…", „Im Kontext der… wird deutlich…" |
+
+---
+
+## Beispiel: Vergleichsthese formulieren
+
+**Aufgabe:** Vergleiche Kafkas „Die Verwandlung" mit Hoffmanns „Der Sandmann" im Hinblick auf das Motiv des Identitätsverlusts.
+
+**Schwache These:** „Beide Texte handeln von Identitätsverlust."
+— Zu allgemein, keine Differenzierung.
+
+**Starke These:** „Sowohl Kafkas ‚Die Verwandlung' als auch Hoffmanns ‚Der Sandmann' gestalten den Verlust einer stabilen Identität — doch während Hoffmann den Identitätsverlust als Folge einer fantastischen Bedrohung von außen (Coppelius/Coppola) inszeniert, stellt Kafka die Verwandlung als unerklärbares Faktum dar, das die soziale Identität Gregors schlagartig zerstört. In Hoffmanns romantischer Erzählung bleibt die Grenze zwischen Wahn und Wirklichkeit offen; bei Kafka ist die Verwandlung grotesk-real — und gerade darin liegt ihr Schrecken."
+
+:::info Analyse der These
+Die starke These leistet: (1) Gemeinsamkeit benennen (Identitätsverlust), (2) Unterschied herausarbeiten (fantastische Bedrohung vs. unerklärbares Faktum), (3) epochalen Kontext andeuten (Romantik vs. Moderne), (4) eine eigene Deutung anbieten (Schrecken des Realen vs. Schrecken des Fantastischen).
+:::
+
+---
 
 ## Übung: Vergleichende Analyse
 
@@ -19,4 +99,24 @@ Vergleiche Kafkas „Die Verwandlung" mit Hoffmanns „Der Sandmann" zum Motiv d
   textB={kafkaHoffmannVergleich.textB}
   vergleichsaspekte={kafkaHoffmannVergleich.vergleichsaspekte}
   title="Identitätsverlust: Kafka vs. Hoffmann"
+/>
+
+## Quiz: Werkvergleich
+
+<MultipleChoice
+  question="Welche Vergleichsmethode wird im Abitur am häufigsten empfohlen?"
+  options={[
+    { text: 'Der Blockvergleich (erst Text A, dann Text B, dann Vergleich)', correct: false, explanation: 'Der Blockvergleich ist übersichtlich, führt aber oft dazu, dass der eigentliche Vergleich zu kurz kommt und erst am Ende „draufgesetzt" wird.' },
+    { text: 'Der Aspektvergleich (beide Texte parallel, Aspekt für Aspekt)', correct: true, explanation: 'Richtig! Der Aspektvergleich erzwingt durchgängig vergleichendes Denken. Die Vergleichsaspekte bilden die Gliederungspunkte — in jedem Abschnitt werden beide Texte behandelt.' },
+    { text: 'Es ist egal, welche Methode man wählt', correct: false, explanation: 'Nicht ganz. Zwar sind alle drei Methoden grundsätzlich möglich, aber der Aspektvergleich wird von den meisten Prüfern bevorzugt, weil er den Vergleich ins Zentrum stellt.' },
+  ]}
+/>
+
+<MultipleChoice
+  question="Was macht eine starke Vergleichsthese aus?"
+  options={[
+    { text: 'Sie benennt nur die Gemeinsamkeiten der Texte', correct: false, explanation: 'Zu einseitig. Eine gute These benennt Gemeinsamkeiten *und* Unterschiede — und deutet deren Bedeutung an.' },
+    { text: 'Sie benennt Gemeinsamkeiten und Unterschiede, ordnet sie ein und bietet eine eigene Deutung an', correct: true, explanation: 'Richtig! Eine starke These zeigt: (1) Was verbindet die Texte? (2) Worin unterscheiden sie sich? (3) Was bedeutet dieser Befund im literarischen/epochalen Kontext?' },
+    { text: 'Sie fasst die Handlungen beider Texte zusammen', correct: false, explanation: 'Eine Inhaltsangabe ist keine These. Die Vergleichsthese ist eine analytische Aussage über die Beziehung der Texte zueinander.' },
+  ]}
 />

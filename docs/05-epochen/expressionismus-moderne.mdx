@@ -4,15 +4,154 @@ title: Expressionismus & Moderne
 ---
 
 import { TimedChallenge } from '@site/src/components/exercises/TimedChallenge';
-import { epochenSchnelltrainer } from '@site/src/data/exercises/kapitel05';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { TextAnnotation } from '@site/src/components/interactive/TextAnnotation';
+import { EpochenZuordnung } from '@site/src/components/exercises/EpochenZuordnung';
+import { epochenSchnelltrainer, epochenZuordnungTexte } from '@site/src/data/exercises/kapitel05';
 
 # Expressionismus & Moderne
 
+Expressionismus und literarische Moderne entstehen im frühen 20. Jahrhundert als Reaktion auf die Erfahrung von **Industrialisierung, Urbanisierung und Entfremdung**. Während der Expressionismus eine klar umrissene Bewegung ist (ca. 1910–1925), umfasst die „Moderne" einen weiteren Rahmen literarischer Erneuerung, der von Rilke über Kafka bis Thomas Mann reicht.
+
 ## Expressionismus (ca. 1910–1925)
 
-**Zentrale Merkmale:** Großstadt, Zerfall, Ich-Verlust, ekstatische Sprache
+Der Expressionismus ist die radikalste literarische Bewegung des frühen 20. Jahrhunderts. Die Autoren — meist junge Männer um die 20 — reagieren auf die Krise der bürgerlichen Welt mit einer **Sprache des Schreis**: Sie wollen nicht die äußere Wirklichkeit abbilden (wie der Naturalismus), sondern innere Zustände *ausdrücken* (lat. *exprimere*).
 
-**Schlüsselwerke:** Trakl, Heym, Benn — Gedichte; Kafka — *Die Verwandlung*
+### Historischer Kontext
+
+Der Expressionismus entsteht vor dem Hintergrund tiefgreifender Umbrüche:
+- **Großstadterfahrung:** Berlin wächst zur Millionenstadt — Reizüberflutung, Anonymität, Tempo
+- **Erster Weltkrieg (1914–1918):** Viele Expressionisten fallen im Krieg oder werden durch ihn traumatisiert
+- **Krise des Individuums:** Nietzsche („Gott ist tot"), Freud (Unbewusstes), Einstein (Relativitätstheorie) erschüttern das Weltbild
+- **Generationenkonflikt:** Rebellion der „Söhne" gegen die Autoritäten der Vätergeneration
+
+### Zentrale Merkmale
+
+| Merkmal | Erklärung |
+|---------|-----------|
+| **Großstadt als Motiv** | Die Stadt als Ort der Entfremdung, des Verfalls und der Reizüberflutung |
+| **Ich-Verlust und Zerfall** | Auflösung des kohärenten Subjekts; der Mensch als Fragment |
+| **Ekstatische Sprache** | Neologismen, Reihungsstil, Farbsymbolik, Synästhesien, Chiffren |
+| **Simultanstil** | Gleichzeitige Darstellung verschiedener Eindrücke (wie im Kubismus) |
+| **Ästhetik des Hässlichen** | Verfall, Tod, Krankheit, Wahnsinn als Themen — Abkehr vom Schönheitsideal |
+| **Vitalismus und Aufbruch** | Sehnsucht nach dem „Neuen Menschen", nach Wandlung und Erneuerung |
+| **Verdichtete Form** | Besonders in der Lyrik: Sonettform als Kontrast zum chaotischen Inhalt |
+
+### Schlüsselwerke
+
+- **Lyrik:** Georg Trakl — *Verfall*, *Grodek* (1914); Georg Heym — *Der Gott der Stadt* (1910); Gottfried Benn — *Morgue* (1912); Jakob van Hoddis — *Weltende* (1911); August Stramm — *Patrouille* (1915)
+- **Epik:** Franz Kafka — *Die Verwandlung* (1915), *Der Prozess* (1925); Alfred Döblin — *Berlin Alexanderplatz* (1929)
+- **Dramatik:** Georg Kaiser — *Von morgens bis mitternachts* (1912); Ernst Toller — *Masse Mensch* (1921)
+
+> „Dem Bürger fliegt vom spitzen Kopf der Hut, / In allen Lüften hallt es wie Geschrei." — Jakob van Hoddis, *Weltende* (1911)
+
+:::tip Klausurtipp
+In der Klausur erkennst du expressionistische Lyrik an: **Farbsymbolik** (Schwarz, Rot, Blau), **Reihungsstil** (Aufzählungen ohne Verbindung), **Neologismen** (neu erfundene Wörter), **Enjambements** und dem typischen Kontrast zwischen **strenger Form** (häufig Sonett) und **chaotischem Inhalt**. Benenne diesen Widerspruch — er ist ein zentrales Analyseergebnis.
+:::
+
+---
+
+## Literarische Moderne (ca. 1890–1930)
+
+Die „literarische Moderne" ist kein einheitlicher Epochenbegriff, sondern ein Sammelbegriff für Autoren, die zwischen Naturalismus und Expressionismus neue Erzähl- und Darstellungsformen entwickeln. Gemeinsam ist ihnen die **Krise der Darstellbarkeit**: Die Welt lässt sich nicht mehr einfach abbilden — die Sprache selbst wird zum Problem.
+
+### Zentrale Merkmale
+
+| Merkmal | Erklärung |
+|---------|-----------|
+| **Sprachkrise** | Misstrauen gegenüber der Fähigkeit der Sprache, Wirklichkeit auszudrücken (Hofmannsthals *Chandos-Brief*, 1902) |
+| **Innerer Monolog / Bewusstseinsstrom** | Neue Erzähltechniken, die das Innenleben direkt abbilden (Schnitzler: *Leutnant Gustl*) |
+| **Parabel und Groteske** | Kafkas Texte als Parabeln ohne eindeutige Deutung — die Vieldeutigkeit ist Programm |
+| **Ästhetizismus** | Kunst um der Kunst willen; Schönheit als eigener Wert (Rilke, George) |
+| **Décadence** | Darstellung von Verfall, Überfeinerung, Lebensuntüchtigkeit (Thomas Mann: *Der Tod in Venedig*) |
+| **Montage und Perspektivenwechsel** | Neue narrative Techniken, die die Einheit des Romans aufbrechen |
+
+### Schlüsselwerke
+
+- **Rilke:** *Neue Gedichte* (1907) — Dinggedichte, die Gegenstände aus sich heraus sprechen lassen
+- **Kafka:** *Die Verwandlung* (1915), *Der Prozess* (1925) — Parabeln der Entfremdung und Machtlosigkeit
+- **Thomas Mann:** *Der Tod in Venedig* (1912) — Décadence, Ästhetizismus, Untergang
+- **Schnitzler:** *Leutnant Gustl* (1900) — Erster konsequenter innerer Monolog in deutscher Sprache
+- **Hofmannsthal:** *Ein Brief* (Chandos-Brief, 1902) — Programmatischer Text der Sprachkrise
+
+:::warning Wichtige Unterscheidung
+**Kafka** wird oft dem Expressionismus zugeordnet — das ist vereinfachend. Kafkas Sprache ist gerade *nicht* ekstatisch, sondern nüchtern und präzise. Seine Texte teilen mit dem Expressionismus die Themen (Entfremdung, Ich-Verlust, undurchschaubare Machtstrukturen), aber der Stil ist ein anderer: kühle Protokollsprache für albtraumhafte Inhalte. In der Klausur solltest du Kafka als Autor der **literarischen Moderne** einordnen, der expressionistische *Themen* aufgreift, aber stilistisch eigenständig ist.
+:::
+
+---
+
+## Expressionismus vs. Literarische Moderne im Vergleich
+
+| Aspekt | Expressionismus | Literarische Moderne |
+|--------|----------------|---------------------|
+| **Sprache** | Ekstatisch, laut, bildgewaltig | Reflektiert, oft nüchtern, sprachkritisch |
+| **Haltung** | Aufschrei, Anklage, Pathos | Analyse, Ironie, Skepsis |
+| **Form** | Häufig Sonett (Kontrast), Reihungsstil | Parabel, innerer Monolog, Montage |
+| **Themen** | Großstadt, Krieg, Zerfall, Neuer Mensch | Sprachkrise, Décadence, Entfremdung |
+| **Autoren** | Trakl, Heym, Benn, Stramm | Kafka, Rilke, Mann, Schnitzler |
+| **Ziel** | Ausdruck innerer Wahrheit durch Intensität | Darstellung der Krise der Darstellbarkeit selbst |
+
+---
+
+## Textbeispiel: Trakls „Verfall" (1913)
+
+<TextAnnotation
+  text={'Am Abend, wenn die Glocken Frieden läuten,\nFolg ich der Vögel wundervollen Flügen,\nDie lang geschart, gleich frommen Pilgerzügen,\nEntschwinden in den herbstlich klaren Weiten.\n\nHinwandelnd durch den dämmervollen Garten\nTräum ich nach ihren helleren Geschicken\nUnd fühl der Stunden Weiser kaum mehr rücken.\nSo folg ich über Wolken ihren Fahrten.'}
+  annotations={[
+    { start: 0, end: 49, label: 'Synästhesie: Glocken „läuten Frieden" — Klang wird Gefühl', color: 'blue' },
+    { start: 50, end: 108, label: 'Vergleich: Vögel wie „fromme Pilgerzüge" — religiöse Überhöhung', color: 'green' },
+    { start: 175, end: 237, label: 'Personifikation: „der Stunden Weiser" rückt — Zeitverfall', color: 'purple' },
+    { start: 109, end: 174, label: 'Farbsymbolik: „dämmervoll" — Übergang, Vergänglichkeit', color: 'orange' }
+  ]}
+  title={'Trakls „Verfall" — Expressionistische Bildsprache'}
+  quelle="Trakl, Gedichte. Projekt Gutenberg."
+/>
+
+:::info Analyse
+Trakls Sonett „Verfall" zeigt die typisch expressionistische Spannung zwischen **strenger Form** (Sonett mit umarmenden Reimen) und **Thematik des Zerfalls**. Die Bildsprache ist dicht und vieldeutig: Herbst, Dämmerung und Vogelflug werden zu Chiffren der Vergänglichkeit. Anders als bei den „lauten" Expressionisten (Heym, Benn) ist Trakls Ton leise und elegisch — aber die Bildverdichtung und Synästhesien sind typisch expressionistisch. Der Kontrast von formaler Ordnung und inhaltlichem Verfall ist ein zentrales Analyseergebnis.
+:::
+
+---
+
+## Übung: Texte zuordnen
+
+<EpochenZuordnung
+  texte={epochenZuordnungTexte.texte.filter(t => ['expressionismus'].includes(t.correctEpocheId))}
+  epochen={[
+    { id: 'expressionismus', name: 'Expressionismus', zeitraum: 'ca. 1910–1925', color: '#ef4444' },
+    { id: 'romantik', name: 'Romantik', zeitraum: 'ca. 1795–1848', color: '#8b5cf6' }
+  ]}
+  title="Expressionismus oder Romantik?"
+/>
+
+## Quiz: Expressionismus & Moderne
+
+<MultipleChoice
+  question="Was unterscheidet Kafkas Stil vom typischen Expressionismus?"
+  options={[
+    { text: 'Kafka schreibt nüchtern und präzise, während der Expressionismus ekstatisch und bildgewaltig ist — bei ähnlichen Themen (Entfremdung, Machtlosigkeit)', correct: true, explanation: 'Richtig! Kafkas „Protokollstil" steht im Kontrast zur expressionistischen Sprachexplosion. Die Verwandlung beginnt sachlich: „Als Gregor Samsa eines Morgens erwachte…" — als wäre die Verwandlung in ein Ungeziefer alltäglich.' },
+    { text: 'Kafka gehört zum Naturalismus, nicht zur Moderne', correct: false, explanation: 'Falsch. Kafkas Texte sind keine naturalistischen Milieustudien, sondern parabelhafte, vieldeutige Erzählungen.' },
+    { text: 'Es gibt keinen Unterschied — Kafka ist ein typischer Expressionist', correct: false, explanation: 'Zu einfach. Kafka teilt expressionistische Themen, aber sein Stil ist das Gegenteil von expressionistischem Pathos.' },
+  ]}
+/>
+
+<MultipleChoice
+  question={'Was ist der „Chandos-Brief" (Hofmannsthal, 1902)?'}
+  options={[
+    { text: 'Ein Brief an einen Verleger über Honorarfragen', correct: false, explanation: 'Falsch. Der Chandos-Brief ist ein fiktiver Text — kein realer Brief.' },
+    { text: 'Ein fiktiver Brief, in dem ein Schriftsteller beschreibt, dass ihm die Sprache zerfällt — Programmtext der Sprachkrise der Moderne', correct: true, explanation: 'Richtig! Lord Chandos beschreibt, wie ihm „die Worte im Munde zerfallen wie modrige Pilze". Der Text gilt als Gründungsdokument der literarischen Moderne und ihrer Sprachskepsis.' },
+    { text: 'Ein expressionistisches Gedicht über den Ersten Weltkrieg', correct: false, explanation: 'Falsch. Der Chandos-Brief erschien 1902, also vor dem Krieg, und ist Prosa, kein Gedicht.' },
+  ]}
+/>
+
+<MultipleChoice
+  question="Warum verwenden viele expressionistische Dichter die Sonettform?"
+  options={[
+    { text: 'Weil sie keine anderen Formen kannten', correct: false, explanation: 'Falsch. Die Expressionisten kannten und nutzten viele Formen — die Wahl des Sonetts ist bewusst.' },
+    { text: 'Weil die strenge Form einen wirkungsvollen Kontrast zum chaotischen, zerfallenden Inhalt erzeugt', correct: true, explanation: 'Richtig! Der Gegensatz von formaler Strenge (14 Verse, festes Reimschema) und inhaltlichem Zerfall (Großstadt, Tod, Wahnsinn) ist ein zentrales Stilmittel des Expressionismus. Die Form „hält" den Inhalt zusammen — oder bricht unter ihm zusammen.' },
+    { text: 'Weil das Sonett eine expressionistische Erfindung ist', correct: false, explanation: 'Falsch. Das Sonett stammt aus dem 13. Jahrhundert (Italien) und wurde in der Barockzeit im Deutschen populär.' },
+  ]}
+/>
 
 ## Schnelltrainer: Epochen-Wissen
 
