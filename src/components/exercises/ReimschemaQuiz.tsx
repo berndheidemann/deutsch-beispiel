@@ -20,25 +20,20 @@ const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f'];
 
 function ReimschemaQuizInner({ strophe, reimschemaName, erklaerung, title = 'Reimschema bestimmen', onComplete }: ReimschemaQuizProps) {
   const [assignments, setAssignments] = useState<Record<string, number>>({});
-  const [nextGroup, setNextGroup] = useState(0);
   const [checked, setChecked] = useState(false);
+
+  const maxGroups = strophe.length;
 
   const assignVers = (versId: string) => {
     if (checked) return;
     const current = assignments[versId];
     if (current !== undefined) {
-      // Cycle to next group or remove
-      const next = (current + 1) % (nextGroup + 1);
-      if (next === nextGroup) {
-        setAssignments(prev => ({ ...prev, [versId]: next }));
-        setNextGroup(prev => prev + 1);
-      } else {
-        setAssignments(prev => ({ ...prev, [versId]: next }));
-      }
+      // Cycle through groups 0..maxGroups-1
+      const next = (current + 1) % maxGroups;
+      setAssignments(prev => ({ ...prev, [versId]: next }));
     } else {
-      // Find if this verse rhymes with an existing group
-      setAssignments(prev => ({ ...prev, [versId]: nextGroup }));
-      setNextGroup(prev => prev + 1);
+      // First click: assign to group 0
+      setAssignments(prev => ({ ...prev, [versId]: 0 }));
     }
   };
 
@@ -62,7 +57,6 @@ function ReimschemaQuizInner({ strophe, reimschemaName, erklaerung, title = 'Rei
 
   const reset = () => {
     setAssignments({});
-    setNextGroup(0);
     setChecked(false);
   };
 
@@ -70,7 +64,7 @@ function ReimschemaQuizInner({ strophe, reimschemaName, erklaerung, title = 'Rei
     <div className="exercise-card">
       <div style={{ fontWeight: 600, fontSize: '1.05rem', marginBottom: '0.25rem' }}>{title}</div>
       <p style={{ fontSize: '0.875rem', color: 'var(--ifm-color-emphasis-600)', marginBottom: '1rem' }}>
-        Klicke auf die Versenden, um reimende Verse mit dem gleichen Buchstaben zu markieren.
+        Klicke auf die Verse, um ihnen Reim-Buchstaben zuzuweisen. Klicke mehrfach, um den Buchstaben zu wechseln. Verse mit dem gleichen Buchstaben reimen sich.
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
