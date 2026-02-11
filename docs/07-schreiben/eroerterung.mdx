@@ -1,0 +1,47 @@
+---
+sidebar_position: 1
+title: Erörterung
+---
+
+import { ArgumentBuilder } from '@site/src/components/exercises/ArgumentBuilder';
+import { ArgumentationsStruktur } from '@site/src/components/visualizations/ArgumentationsStruktur';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { argumentBuilderEroerterung, eroerterungMC } from '@site/src/data/exercises/kapitel07';
+
+# Erörterung
+
+## Erörterungsformen
+
+| Form | Aufbau | Einsatz |
+|------|--------|---------|
+| **Lineare Erörterung** | These → Argument 1 → Argument 2 → Argument 3 → Fazit | Wenn die Position klar ist |
+| **Dialektische Erörterung** | Pro-Argumente → Contra-Argumente → Synthese/Fazit | Wenn beide Seiten beleuchtet werden sollen |
+
+## Argumentationstypen
+
+| Typ | Beschreibung |
+|-----|-------------|
+| **Faktenargument** | Stützt sich auf nachprüfbare Tatsachen |
+| **Autoritätsargument** | Beruft sich auf Experten/Autoritäten |
+| **Normatives Argument** | Beruft sich auf Werte und Normen |
+| **Analogie-Argument** | Vergleich mit ähnlichem Sachverhalt |
+
+## Argumentationsmodelle
+
+Vergleiche verschiedene Aufbauformen:
+
+<ArgumentationsStruktur title="Argumentationsmodelle im Vergleich" />
+
+## Übung: Argumentation aufbauen
+
+Bringe die Bausteine in die richtige Reihenfolge:
+
+<ArgumentBuilder
+  bausteine={argumentBuilderEroerterung.bausteine}
+  correctOrder={argumentBuilderEroerterung.correctOrder}
+  title="Dialektische Erörterung aufbauen"
+/>
+
+## Quiz: Erörterungsformen
+
+<MultipleChoice question={eroerterungMC[0].question} options={eroerterungMC[0].options} />

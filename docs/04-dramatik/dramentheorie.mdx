@@ -1,0 +1,43 @@
+---
+sidebar_position: 1
+title: Dramentheorie
+---
+
+import { Spannungskurve } from '@site/src/components/visualizations/Spannungskurve';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { kabaleSpannungskurve, dramentheorieMC } from '@site/src/data/exercises/kapitel04';
+
+# Dramentheorie
+
+## Geschlossene vs. offene Dramenform
+
+| Merkmal | Geschlossenes Drama | Offene Dramenform |
+|---------|-------------------|-----------------|
+| **Aufbau** | 5-Akt-Schema (Freytags Pyramide) | Szenenfolge ohne klassischen Spannungsbogen |
+| **Handlung** | Einheit von Ort, Zeit, Handlung | Episodisch, fragmentarisch |
+| **Figuren** | Individuelle Charaktere, oft adelig | Typen, soziale Rollen, niedere Stände |
+| **Sprache** | Vers, gehobene Sprache | Alltagssprache, Dialekt |
+| **Ziel** | Katharsis | Gesellschaftskritik |
+| **Beispiel** | Schiller: *Kabale und Liebe* | Büchner: *Woyzeck* |
+
+## Freytags Pyramide
+
+1. **Exposition** — Einführung in Ort, Zeit, Figuren
+2. **Steigende Handlung** — Konfliktverschärfung
+3. **Klimax / Peripetie** — Höhe- und Wendepunkt
+4. **Fallende Handlung** — Retardierendes Moment
+5. **Katastrophe / Lösung** — Tragischer Ausgang oder Auflösung
+
+## Interaktiv: Freytags Pyramide
+
+Klicke auf die Phasen, um die Handlung von Schillers „Kabale und Liebe" nachzuvollziehen:
+
+<Spannungskurve
+  phasen={kabaleSpannungskurve}
+  title="Freytags Pyramide: Kabale und Liebe"
+  werk="Friedrich Schiller: Kabale und Liebe (1784)"
+/>
+
+## Quiz: Dramentheorie
+
+<MultipleChoice question={dramentheorieMC[0].question} options={dramentheorieMC[0].options} />

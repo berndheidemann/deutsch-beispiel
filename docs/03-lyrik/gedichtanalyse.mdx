@@ -1,0 +1,44 @@
+---
+sidebar_position: 3
+title: Gedichtanalyse
+---
+
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { SchrittweiseAnalyse } from '@site/src/components/interactive/SchrittweiseAnalyse';
+import { gedichtanalyseMC, gedichtAnalyseSchritte } from '@site/src/data/exercises/kapitel03';
+
+# Gedichtanalyse — Methodik
+
+Die systematische Gedichtanalyse folgt einem klaren Aufbau, der sich in der Klausur bewährt hat.
+
+## Aufbau einer Gedichtanalyse
+
+1. **Einleitungssatz:** Autor, Titel, Erscheinungsjahr, Thema, Epoche
+2. **Inhalt und Aufbau:** Strophenweiser Inhalt, Gliederung
+3. **Formale Aspekte:** Metrum, Reimschema, Kadenz, Strophenform
+4. **Sprachliche Mittel:** Stilmittel mit Wirkungsanalyse (Dreischritt!)
+5. **Epochenzuordnung und Deutung:** Merkmale nachweisen, Gesamtdeutung
+
+:::tip Klausurtipp
+Beginne **immer** mit einem vollständigen Einleitungssatz: „Das Gedicht ‚Mondnacht' von Joseph von Eichendorff, veröffentlicht 1837, thematisiert die romantische Sehnsucht nach der Einheit von Mensch und Natur."
+:::
+
+## Übung: Eichendorffs „Mondnacht" analysieren
+
+Wende die Methodik der Gedichtanalyse Schritt für Schritt auf Eichendorffs „Mondnacht" an:
+
+> „Es war, als hätt der Himmel / Die Erde still geküsst, / Dass sie im Blütenschimmer / Von ihm nun träumen müsst.
+>
+> Die Luft ging durch die Felder, / Die Ähren wogten sacht, / Es rauschten leis die Wälder, / So sternklar war die Nacht.
+>
+> Und meine Seele spannte / Weit ihre Flügel aus, / Flog durch die stillen Lande, / Als flöge sie nach Haus."
+>
+> — Joseph von Eichendorff, *Mondnacht* (1837)
+
+<SchrittweiseAnalyse schritte={gedichtAnalyseSchritte} title={'Gedichtanalyse: „Mondnacht"'} />
+
+## Quiz: Gedichtanalyse
+
+<MultipleChoice question={gedichtanalyseMC[0].question} options={gedichtanalyseMC[0].options} />
+
+<MultipleChoice question={gedichtanalyseMC[1].question} options={gedichtanalyseMC[1].options} />

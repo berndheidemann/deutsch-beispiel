@@ -1,0 +1,57 @@
+---
+sidebar_position: 1
+title: Erzähltechnik
+---
+
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { TextAnnotation } from '@site/src/components/interactive/TextAnnotation';
+import { SchrittweiseAnalyse } from '@site/src/components/interactive/SchrittweiseAnalyse';
+import { erzaehltechnikMC, kafkaVerwandlungAnnotation, effiAnalyseSchritte } from '@site/src/data/exercises/kapitel02';
+
+# Erzähltechnik
+
+## Erzählperspektiven nach Stanzel
+
+| Erzählsituation | Kennzeichen | Beispiel |
+|-----------------|-------------|---------|
+| **Auktorialer Erzähler** | Allwissend, kommentierend, übergeordnet | Fontane: *Effi Briest* |
+| **Personaler Erzähler** | Begrenzt auf eine Figur, keine eigene Stimme | Kafka: *Die Verwandlung* |
+| **Ich-Erzähler** | Erzähler = Figur, subjektiv, begrenzt | E.T.A. Hoffmann: *Der Sandmann* |
+| **Neutraler Erzähler** | Nur Äußeres, kein Innenleben, keine Wertung | Hemingway-Stil |
+
+## Darbietungsformen
+
+| Form | Definition | Signalwörter |
+|------|-----------|-------------|
+| **Erzählerbericht** | Erzähler berichtet | Er-/Sie-Form, Präteritum |
+| **Direkte Rede** | Wörtliche Figurenrede | Anführungszeichen |
+| **Indirekte Rede** | Konjunktiv I | „Er sagte, er sei…" |
+| **Erlebte Rede** | Mischform: Erzählersprache + Figurenperspektive | 3. Person + Präteritum + Figurenduktus |
+| **Innerer Monolog** | Gedankenstrom in Ich-Form | Ich-Form, Präsens |
+
+:::warning Häufiger Fehler
+Die **erlebte Rede** wird in Klausuren am häufigsten übersehen! Sie verbindet die grammatische Form des Erzählerberichts (3. Person, Präteritum) mit dem Duktus der Figurenrede (Ausrufe, rhetorische Fragen). Beispiel: „Morgen war Weihnachten. Wie die Zeit verging!" — Das ist kein Erzählerkommentar, sondern die Figur „denkt" in der Erzählersprache.
+:::
+
+## Übungen
+
+### Kafka: Erzähltechnik erkennen
+
+Klicke auf die markierten Stellen, um die Erzähltechnik zu analysieren:
+
+<TextAnnotation
+  text={kafkaVerwandlungAnnotation.text}
+  annotations={kafkaVerwandlungAnnotation.annotations}
+  title={'Erzähltechnik in Kafkas „Die Verwandlung"'}
+  quelle="Franz Kafka: Die Verwandlung (1915)"
+/>
+
+### Schrittweise Analyse: Fontane „Effi Briest"
+
+Analysiere den Romananfang von Fontanes „Effi Briest" Schritt für Schritt:
+
+<SchrittweiseAnalyse schritte={effiAnalyseSchritte} title={'Erzähltechnik in „Effi Briest" analysieren'} />
+
+### Quiz: Erzähltechnik
+
+<MultipleChoice question={erzaehltechnikMC[0].question} options={erzaehltechnikMC[0].options} />

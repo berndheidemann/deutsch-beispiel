@@ -1,0 +1,22 @@
+---
+sidebar_position: 1
+title: Vergleichende Analyse
+---
+
+import { TextVergleich } from '@site/src/components/interactive/TextVergleich';
+import { kafkaHoffmannVergleich } from '@site/src/data/exercises/kapitel08';
+
+# Vergleichende Analyse
+
+Die vergleichende Analyse ist die Methodik des Werkvergleichs: Zwei Texte werden systematisch unter bestimmten Aspekten verglichen.
+
+## Übung: Vergleichende Analyse
+
+Vergleiche Kafkas „Die Verwandlung" mit Hoffmanns „Der Sandmann" zum Motiv des Identitätsverlusts:
+
+<TextVergleich
+  textA={kafkaHoffmannVergleich.textA}
+  textB={kafkaHoffmannVergleich.textB}
+  vergleichsaspekte={kafkaHoffmannVergleich.vergleichsaspekte}
+  title="Identitätsverlust: Kafka vs. Hoffmann"
+/>

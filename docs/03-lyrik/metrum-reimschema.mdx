@@ -1,0 +1,59 @@
+---
+sidebar_position: 1
+title: Metrum & Reimschema
+---
+
+import { MetrumKlopfer } from '@site/src/components/exercises/MetrumKlopfer';
+import { ReimschemaQuiz } from '@site/src/components/exercises/ReimschemaQuiz';
+import { MetrumVisualizer } from '@site/src/components/visualizations/MetrumVisualizer';
+import { metrumKlopferVerse, reimschemaEichendorff, metrumVisualizerData } from '@site/src/data/exercises/kapitel03';
+
+# Metrum & Reimschema
+
+## Versfüße
+
+| Versfuß | Schema | Beispiel | Wirkung |
+|---------|--------|---------|---------|
+| **Jambus** | ◡ ▬ | ge-DICHT | Fließend, natürlich |
+| **Trochäus** | ▬ ◡ | MÜL-ler | Bestimmt, feierlich |
+| **Daktylus** | ▬ ◡ ◡ | WAN-de-rer | Tänzerisch, beschwingt |
+| **Anapäst** | ◡ ◡ ▬ | Pa-ra-DIES | Drängend, vorwärtstreibend |
+
+## Reimschemata
+
+| Schema | Muster | Beispiel |
+|--------|--------|---------|
+| **Paarreim** | aabb | Volkslied, Ballade |
+| **Kreuzreim** | abab | Häufigste Form |
+| **Umarmender Reim** | abba | Rahmend, geschlossen |
+| **Schweifreim** | aabccb | Sechszeilige Strophe |
+
+## Übungen
+
+### Metrum erkennen
+
+So sieht ein Jambus aus:
+
+<MetrumVisualizer
+  vers={metrumVisualizerData[0].vers}
+  silben={metrumVisualizerData[0].silben}
+  versfuss={metrumVisualizerData[0].versfuss}
+  kadenz={metrumVisualizerData[0].kadenz}
+/>
+
+### Metrum-Klopfer
+
+Klicke auf die betonten Silben:
+
+<MetrumKlopfer verse={metrumKlopferVerse} title="Metrum-Training" />
+
+### Reimschema bestimmen
+
+Ordne die Verse dem richtigen Reimschema zu:
+
+<ReimschemaQuiz
+  strophe={reimschemaEichendorff.strophe}
+  reimschemaName={reimschemaEichendorff.reimschemaName}
+  erklaerung={reimschemaEichendorff.erklaerung}
+  title={'Reimschema: Eichendorff „Mondnacht"'}
+/>

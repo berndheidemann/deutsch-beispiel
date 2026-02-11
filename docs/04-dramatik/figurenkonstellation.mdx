@@ -1,0 +1,31 @@
+---
+sidebar_position: 3
+title: Figurenkonstellation
+---
+
+import { Figurenkonstellation } from '@site/src/components/visualizations/Figurenkonstellation';
+import { kabaleUndLiebeFigurenkonstellation } from '@site/src/data/exercises/kapitel04';
+
+# Figurenkonstellation
+
+Eine Figurenkonstellation zeigt die **Beziehungen** zwischen den Figuren eines Werks.
+
+## Beziehungstypen
+
+| Typ | Darstellung | Beispiel |
+|-----|------------|---------|
+| Liebe | Grüne Linie | Luise — Ferdinand (*Kabale und Liebe*) |
+| Konflikt | Rote Linie | Ferdinand — Präsident (*Kabale und Liebe*) |
+| Familie | Blaue Linie | Präsident — Ferdinand (Vater-Sohn) |
+| Intrige | Gestrichelte Linie | Wurm — Präsident (*Kabale und Liebe*) |
+
+## Interaktiv: Figurenkonstellation
+
+Erkunde die Beziehungen zwischen den Figuren:
+
+<Figurenkonstellation
+  figuren={kabaleUndLiebeFigurenkonstellation.figuren}
+  beziehungen={kabaleUndLiebeFigurenkonstellation.beziehungen}
+  title="Figurenkonstellation: Kabale und Liebe"
+  werk="Friedrich Schiller: Kabale und Liebe (1784)"
+/>

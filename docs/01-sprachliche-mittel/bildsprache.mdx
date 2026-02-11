@@ -1,0 +1,79 @@
+---
+sidebar_position: 2
+title: Bildsprache
+---
+
+import { TextAnnotation } from '@site/src/components/interactive/TextAnnotation';
+import { StilmittelKarte } from '@site/src/components/visualizations/StilmittelKarte';
+import { textAnnotationGoethe, stilmittelKarteGoethe } from '@site/src/data/exercises/kapitel01';
+
+# Bildsprache — Metapher, Allegorie, Symbol
+
+Die bildliche Sprache gehört zu den wichtigsten Gestaltungsmitteln in der Literatur. In diesem Abschnitt lernst du, die verschiedenen Formen bildlicher Sprache sicher zu unterscheiden.
+
+## Metapher
+
+Eine **Metapher** (gr. metaphorá = Übertragung) ist eine Bedeutungsübertragung: Ein Ausdruck wird aus seinem ursprünglichen Bedeutungsbereich in einen anderen übertragen — **ohne** Vergleichswort wie „wie" oder „als".
+
+> „Das **Feuer** der Leidenschaft" — Die Leidenschaft *ist* kein Feuer, aber die Eigenschaften des Feuers (Hitze, Intensität, Unkontrollierbarkeit) werden auf die Leidenschaft übertragen.
+
+:::warning Häufiger Fehler
+**Metapher und Vergleich verwechseln:** Ein Vergleich enthält **immer** „wie" oder „als": „Er kämpfte **wie** ein Löwe." Eine Metapher verzichtet darauf: „Er war ein Löwe im Kampf."
+:::
+
+## Personifikation
+
+Eine **Personifikation** (lat. persona = Maske, facere = machen) vermenschlicht etwas Unbelebtes oder Abstraktes — es erhält **menschliche Eigenschaften oder Handlungen**.
+
+> „Die Sonne **lacht**." — Lachen ist eine menschliche Handlung. Die Sonne wird vermenschlicht.
+
+## Symbol
+
+Ein **Symbol** (gr. sýmbolon = Erkennungszeichen) ist ein konventionelles Sinnbild, das **kulturell festgelegt** ist und über sich selbst hinausweist.
+
+| Symbol | Bedeutung |
+|--------|-----------|
+| Taube | Frieden |
+| Ring | Treue, Ewigkeit |
+| Kreuz | Christentum, Leid |
+| Wasser | Leben, Reinigung, Vergänglichkeit |
+
+## Allegorie
+
+Eine **Allegorie** (gr. allegoría = das Anderssagen) ist eine **fortgeführte Metapher** — ein ganzer abstrakter Sachverhalt wird systematisch in ein Bild übersetzt.
+
+> Justitia mit **Waage** (Abwägen der Argumente), **Schwert** (Durchsetzungskraft) und **Augenbinde** (Unparteilichkeit) ist eine Allegorie der Gerechtigkeit.
+
+## Metonymie
+
+Eine **Metonymie** (gr. metonymía = Namensvertauschung) ersetzt einen Begriff durch einen **sachlich verwandten** Begriff.
+
+> „Das **Weiße Haus** erklärte…" — Gemeint ist die US-Regierung, nicht das Gebäude.
+
+:::tip Merke
+**Symbol vs. Metonymie:** Ein Symbol hat eine **konventionelle, kulturübergreifende** Bedeutung (Taube = Frieden). Eine Metonymie beruht auf einer **sachlichen Nähe** (Weißes Haus = Regierung, die dort sitzt).
+:::
+
+## Bildsprache in der Praxis
+
+### Stilmittel im Text erkennen
+
+Klicke auf die markierten Textstellen, um die Stilmittel zu entdecken:
+
+<TextAnnotation
+  text={textAnnotationGoethe.text}
+  annotations={textAnnotationGoethe.annotations}
+  title={'Stilmittel in Goethes „Willkommen und Abschied"'}
+  quelle="J. W. Goethe: Willkommen und Abschied (1771)"
+/>
+
+### Stilmittel-Karte
+
+Entdecke die bildlichen Mittel in Goethes Sturm-und-Drang-Gedicht:
+
+<StilmittelKarte
+  text={stilmittelKarteGoethe.text}
+  markierungen={stilmittelKarteGoethe.markierungen}
+  title={'Bildsprache in „Willkommen und Abschied"'}
+  quelle="J. W. Goethe: Willkommen und Abschied (1771)"
+/>

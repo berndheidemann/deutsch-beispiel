@@ -1,0 +1,33 @@
+---
+sidebar_position: 1
+title: Aufklärung & Sturm und Drang
+---
+
+import { EpochenZuordnung } from '@site/src/components/exercises/EpochenZuordnung';
+import { epochenZuordnungTexte } from '@site/src/data/exercises/kapitel05';
+
+# Aufklärung & Sturm und Drang
+
+## Aufklärung (ca. 1720–1785)
+
+**Zentrale Merkmale:** Vernunft, Toleranz, Erziehung, bürgerliches Trauerspiel
+
+**Schlüsselwerk:** Lessing — *Nathan der Weise* (1779)
+
+> „Kein Mensch muss müssen." — Lessing, *Nathan der Weise*
+
+## Sturm und Drang (ca. 1765–1785)
+
+**Zentrale Merkmale:** Gefühl, Genie, Naturerlebnis, Rebellion gegen Regeln
+
+**Schlüsselwerk:** Goethe — *Willkommen und Abschied*
+
+## Übung: Texte zuordnen
+
+Ordne die Textauszüge der richtigen Epoche zu:
+
+<EpochenZuordnung
+  texte={epochenZuordnungTexte.texte.filter(t => ['aufklaerung', 'sturm-und-drang'].includes(t.correctEpocheId))}
+  epochen={epochenZuordnungTexte.epochen.filter(e => ['aufklaerung', 'sturm-und-drang'].includes(e.id))}
+  title="Aufklärung oder Sturm und Drang?"
+/>

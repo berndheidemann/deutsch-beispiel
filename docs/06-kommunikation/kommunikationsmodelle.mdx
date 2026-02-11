@@ -1,0 +1,46 @@
+---
+sidebar_position: 1
+title: Kommunikationsmodelle
+---
+
+import { KommunikationsModell } from '@site/src/components/visualizations/KommunikationsModell';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { vierOhrenBeispiel1, vierOhrenBeispiel2, kommunikationMC } from '@site/src/data/exercises/kapitel06';
+
+# Kommunikationsmodelle
+
+## Schulz von Thun — Vier-Seiten-Modell
+
+Jede Nachricht enthält vier Ebenen:
+1. **Sachinhalt:** Worüber informiert wird
+2. **Selbstoffenbarung:** Was der Sender über sich preisgibt
+3. **Beziehung:** Wie der Sender zum Empfänger steht
+4. **Appell:** Wozu der Empfänger veranlasst werden soll
+
+## Watzlawick — Axiome
+
+1. Man kann nicht nicht kommunizieren.
+2. Jede Kommunikation hat einen Inhalts- und einen Beziehungsaspekt.
+3. Kommunikation ist immer Ursache und Wirkung.
+4. Menschliche Kommunikation bedient sich analoger und digitaler Modalitäten.
+5. Kommunikation ist symmetrisch oder komplementär.
+
+## Bühler — Organon-Modell
+
+- **Ausdruck** (Sender): Was verrät der Sender über sich?
+- **Darstellung** (Gegenstand): Worüber wird informiert?
+- **Appell** (Empfänger): Was soll der Empfänger tun?
+
+## Interaktiv: Vier-Ohren-Modell
+
+### Alltagsbeispiel
+
+<KommunikationsModell beispiel={vierOhrenBeispiel1} title={'Beispiel: „Die Ampel ist grün."'} />
+
+### Literarisches Beispiel
+
+<KommunikationsModell beispiel={vierOhrenBeispiel2} title={'Büchner: Woyzeck — Dialog-Analyse'} />
+
+## Quiz: Kommunikationsmodelle
+
+<MultipleChoice question={kommunikationMC[0].question} options={kommunikationMC[0].options} />

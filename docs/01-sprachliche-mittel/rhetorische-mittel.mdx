@@ -1,0 +1,97 @@
+---
+sidebar_position: 1
+title: Rhetorische Mittel
+---
+
+import { StilfigurDragDrop } from '@site/src/components/exercises/StilfigurDragDrop';
+import { MultipleChoice } from '@site/src/components/exercises/MultipleChoice';
+import { TimedChallenge } from '@site/src/components/exercises/TimedChallenge';
+import { TextHighlighting } from '@site/src/components/exercises/TextHighlighting';
+import { stilfigurDragDropExercises, stilmittelQuizQuestions, schnelltrainerStilmittel, textHighlightingGretchen } from '@site/src/data/exercises/kapitel01';
+
+# Rhetorische Mittel — Systematischer Überblick
+
+Rhetorische Mittel (auch: Stilmittel oder Stilfiguren) sind sprachliche Gestaltungsmittel, die Texte wirkungsvoller machen. Sie lassen sich in drei Hauptkategorien einteilen.
+
+:::tip Merke
+Ein Stilmittel nur zu **benennen** reicht im LK nicht aus. Es muss immer die **Wirkung im Kontext** analysiert werden — der sogenannte **Dreischritt**: 1. Benennen, 2. Wirkung beschreiben, 3. Funktion im Kontext erklären.
+:::
+
+## Wortfiguren
+
+Wortfiguren betreffen die Anordnung und Wiederholung von Wörtern und Satzteilen.
+
+| Stilmittel | Definition | Beispiel |
+|-----------|-----------|---------|
+| **Anapher** | Wiederholung am Satz-/Versanfang | „Wer nie sein Brot mit Tränen aß, / Wer nie die kummervollen Nächte…" |
+| **Epipher** | Wiederholung am Satz-/Versende | „Doch alle Lust will Ewigkeit, / will tiefe, tiefe Ewigkeit." |
+| **Alliteration** | Gleicher Anlaut aufeinanderfolgender Wörter | „Milch macht müde Männer munter." |
+| **Parallelismus** | Wiederholung der syntaktischen Struktur | „Heiß ist die Liebe, kalt ist der Schnee." |
+| **Chiasmus** | Überkreuzstellung (syntaktische Spiegelung) | „Die Kunst ist lang, und kurz ist unser Leben." |
+| **Ellipse** | Auslassung von Satzteilen | „Je früher der Abschied, desto kürzer die Qual." |
+| **Klimax** | Dreigliedrige Steigerung | „Veni, vidi, vici." |
+| **Antithese** | Gegenüberstellung gegensätzlicher Begriffe | „Der Wahn ist kurz, die Reu' ist lang." |
+| **Oxymoron** | Verbindung sich widersprechender Begriffe | „bittersüß", „alter Knabe" |
+| **Paradoxon** | Scheinbar widersprüchliche Aussage mit tieferem Sinn | „Ich weiß, dass ich nichts weiß." |
+
+## Bildliche Mittel (Tropen)
+
+Tropen sind Bedeutungsübertragungen — ein Ausdruck wird in übertragener Bedeutung verwendet.
+
+| Stilmittel | Definition | Beispiel |
+|-----------|-----------|---------|
+| **Metapher** | Bedeutungsübertragung (verkürzter Vergleich ohne „wie") | „Das Feuer der Leidenschaft" |
+| **Vergleich** | Verknüpfung mit „wie" oder „als" | „Er kämpfte wie ein Löwe." |
+| **Personifikation** | Vermenschlichung von Abstraktem/Unbelebtem | „Die Sonne lacht." |
+| **Allegorie** | Fortgeführte Metapher / bildliche Darstellung eines abstrakten Begriffs | Justitia mit Waage und Schwert |
+| **Symbol** | Konventionelles Sinnbild | Taube = Frieden, Ring = Treue |
+| **Hyperbel** | Starke Übertreibung | „todmüde", „ein Meer von Tränen" |
+| **Litotes** | Untertreibung / doppelte Verneinung | „nicht schlecht" (= gut) |
+| **Ironie** | Das Gegenteil des Gemeinten sagen | „Das hast du ja toll hinbekommen." |
+| **Euphemismus** | Beschönigende Umschreibung | „entschlafen" statt „sterben" |
+| **Synästhesie** | Vermischung verschiedener Sinneswahrnehmungen | „schreiendes Rot", „süße Stimme" |
+| **Metonymie** | Ersetzung durch sachlich verwandten Begriff | „Das Weiße Haus erklärte…" |
+
+## Klangfiguren
+
+| Stilmittel | Definition | Beispiel |
+|-----------|-----------|---------|
+| **Onomatopoesie** | Lautmalerei | „Es knistert, kracht und prasselt." |
+| **Assonanz** | Gleichklang der Vokale | „Hut und Mut" |
+| **Enjambement** | Zeilensprung (Satz geht über Versende hinaus) | „Der Mond ist aufgegangen, / die goldnen Sternlein prangen" |
+
+:::warning Häufiger Fehler
+**Anapher und Alliteration verwechseln:** Eine Anapher ist die Wiederholung eines **ganzen Wortes oder einer Wortgruppe** am Satzanfang. Eine Alliteration ist der gleiche **Anlaut** aufeinanderfolgender Wörter. „Milch macht müde Männer munter" ist eine Alliteration (gleicher Anlaut „M"), keine Anapher.
+:::
+
+## Übungen
+
+### Stilmittel im Text markieren
+
+Wähle eine Kategorie und klicke auf die passenden Textstellen in Gretchens Monolog:
+
+<TextHighlighting
+  text={textHighlightingGretchen.text}
+  targets={textHighlightingGretchen.targets}
+  categories={textHighlightingGretchen.categories}
+  title="Stilmittel in Gretchens Monolog (Faust I)"
+/>
+
+### Stilmittel zuordnen
+
+Ordne die Stilmittel den passenden Beispielen zu:
+
+<StilfigurDragDrop exercises={stilfigurDragDropExercises} />
+
+### Quiz: Stilmittel erkennen
+
+<MultipleChoice
+  question={stilmittelQuizQuestions[0].question}
+  options={stilmittelQuizQuestions[0].options}
+/>
+
+### Schnelltrainer: Stilmittel-Erkennung
+
+Wie viele Stilmittel erkennst du in 60 Sekunden?
+
+<TimedChallenge questions={schnelltrainerStilmittel} timeLimit={60} title="Stilmittel-Schnelltrainer" />
