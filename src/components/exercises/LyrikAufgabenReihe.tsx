@@ -502,8 +502,8 @@ function LyrikAufgabenReiheInner() {
             Alle Aufgaben abgeschlossen! Du hast die Lyrik-Aufgabenreihe gemeistert.
           </div>
         )}
-        {completedCount < totalCount && (
-          <div style={{ marginTop: '0.5rem', display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ marginTop: '0.5rem', display: 'flex', justifyContent: 'space-between' }}>
+          {completedCount < totalCount ? (
             <button
               onClick={() => {
                 const allIds = AUFGABEN.map(a => a.id);
@@ -521,23 +521,23 @@ function LyrikAufgabenReiheInner() {
             >
               Alle freischalten (Test)
             </button>
-            {completedCount > 0 && (
-              <button
-                onClick={handleReset}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--ifm-color-emphasis-500)',
-                  fontSize: '0.75rem',
-                  cursor: 'pointer',
-                  textDecoration: 'underline',
-                }}
-              >
-                Fortschritt zurücksetzen
-              </button>
-            )}
-          </div>
-        )}
+          ) : <span />}
+          {completedCount > 0 && (
+            <button
+              onClick={handleReset}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'var(--ifm-color-emphasis-500)',
+                fontSize: '0.75rem',
+                cursor: 'pointer',
+                textDecoration: 'underline',
+              }}
+            >
+              Fortschritt zurücksetzen
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Station List */}
